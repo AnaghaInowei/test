@@ -29,7 +29,7 @@
 </head>
 <body>
     <!-- <nav class="flex justify-between items-center p-4 bg-white shadow-md"> -->
-    <nav class="relative p-5 bg-white md:flex md:justify-between md:items-center shadow-md">
+    <nav class="fixed w-full p-5 bg-white md:flex md:justify-between md:items-center shadow-md z-10">
             <div class="flex justify-between items-center">
                 <div class="flex flex-row justify-center items-center gap-2">
                     <img src="./assets/udeme-logo.png" alt="Udemelity Logo" class="cursor-pointer h-8 md:h-10">
@@ -66,9 +66,9 @@
         </div>
     </nav>
 
-    <section class="flex flex-col items-start text-left pt-20 pb-20 px-5 bg-slate-900 md:items-start md:text-left" style="
-    padding-top: 10rem;
-    padding-bottom: 10rem;
+    <section class="flex flex-col items-start text-left pt-10 pb-10 px-5 bg-slate-900 md:items-start md:text-left" style="
+    padding-top: 5rem;
+    padding-bottom: 5rem;
     ">
         <div class="w-full text-white mb-6" style="max-width:50rem;">
             <div class=" w-full flex flex-col items-start md:items-start">
@@ -85,9 +85,9 @@
             </div>
         </div>
     </section>
-    <section class="items-center p-10" style="padding: 0 1rem;">
-        <div class=" h-96 bg-white flex flex-col text-center items-center justify-center " >
-            <h2 class="font-bold  text-slate-900 pt-20 text-4xl ">Our Services</h2>
+    <section class="flex flex-col text-center justify-center items-center p-5 bg-gray-100">
+        <div class="flex flex-col text-center items-center justify-center bg-inherit" >
+            <h2 class="font-bold  text-slate-900 pt-10 text-4xl ">Our Services</h2>
             <p class="px-5 text-xl" style="
             margin-top: 30px;
             max-width: 50rem;
@@ -96,13 +96,13 @@
         <div class="flex  flex-wrap justify-center items-center gap-10 mt-10">
             <div class="flex flex-col items-center text-center justify-center bg-white p-5 rounded-lg shadow-md border-t-red-700 border-t-4 gap-5 hover:border-t-orange-500 hover:shadow-lg hover:translate-2.5 max-w-90 transition-all duration-300 card ">
                 <img src="./assets/domestic.png" alt="Domestic Installation" width="40">
-                <h2 class="font-bold text-2xl">Domestic Installation</h2>
+                <h2 class="font-bold text-2xl hover:text-red-600">Domestic Installation</h2>
                 <p class="font-light">Complete electrical solutions for homes and residential properties.</p>
                 <a href="#" class="flex justify-center items-center">Learn More <img src="./assets/Frame.png" alt="Right Angle"></a>
             </div>
             <div class="flex flex-col items-center text-center justify-center bg-white p-5 rounded-lg shadow-md border-t-red-700 border-t-4 gap-5  hover:border-t-orange-500 hover:shadow-lg hover:translate-2.5 max-w-90 transition-all duration-300 card">
                 <img src="./assets/commercial.png" alt="Commercial Installation" width="40">
-                <h2 class="font-bold text-2xl">Commercial Installation</h2>
+                <h2 class="font-bold text-2xl hover:text-red-600">Commercial Installation</h2>
                 <p class="font-light">Electrical systems for offices, retail spaces, and commercial buildings.</p>
                 <a href="#" class="flex justify-center items-center">Learn More <img src="./assets/Frame.png" alt="Right Angle"></a>
             </div>
@@ -110,67 +110,70 @@
            
             <div class="flex flex-col items-center text-center justify-center bg-white p-5 rounded-lg shadow-md border-t-red-700 border-t-4 gap-5 hover:border-t-orange-500 hover:shadow-lg hover:translate-2.5 max-w-90 transition-all duration-300 card ">
                 <img src="./assets/industrial.png" alt="Industrial Installation" width="40">
-                <h2 class="font-bold text-2xl">Industrial Installation</h2>
+                <h2 class="font-bold text-2xl hover:text-red-600">Industrial Installation</h2>
                 <p class="font-light">Heavy-duty electrical solutions for industrial facilities and factories.</p>
                 <a href="#" class="flex justify-center items-center">Learn More <img src="./assets/Frame.png" alt="Right Angle"></a>
             </div>
             <div class="flex flex-col items-center text-center justify-center bg-white p-5 rounded-lg shadow-md border-t-red-700 border-t-4 gap-5 hover:border-t-orange-500 hover:shadow-lg hover:translate-2.5 max-w-90 transition-all duration-300 card ">
                 <img src="./assets/troubleshooting.png" alt="Electrical Troubleshooting" width="40">
-                <h2 class="font-bold text-2xl">Electrical Troubleshooting</h2>
+                <h2 class="font-bold text-2xl hover:text-red-600">Electrical Troubleshooting</h2>
                 <p class="font-light">Diagnosing and fixing electrical problems quickly and efficiently.</p>
                 <a href="#" class="flex justify-center items-center">Learn More <img src="./assets/Frame.png" alt="Right Angle"></a>
             </div>
              <div class="flex flex-col items-center text-center justify-center bg-white p-5 rounded-lg shadow-md border-t-red-700 border-t-4 gap-5 hover:border-t-orange-500 hover:shadow-lg hover:translate-2.5 max-w-90 transition-all duration-300 card ">
                 <img src="./assets/earthing.png" alt="Earthing & Lightning Protection" width="40">
-                <h2 class="font-bold text-2xl">Earthing & Lightning Protection</h2>
+                <h2 class="font-bold text-2xl hover:text-red-600">Earthing & Lightning Protection</h2>
                 <p class="font-light">Safety systems to protect against electrical surges and lightning strikes.</p>
                 <a href="#" class="flex justify-center items-center">Learn More <img src="./assets/Frame.png" alt="Right Angle"></a>
             </div>
             <div class="flex flex-col items-center text-center justify-center bg-white p-5 rounded-lg shadow-md border-t-red-700 border-t-4 gap-5 hover:border-t-orange-500 hover:shadow-lg hover:translate-2.5 max-w-90 transition-all duration-300 card ">
                 <!-- <img src="./assets/domestic.png" alt="Domestic Installation" width="40"> -->
-                <h2 class="font-bold text-2xl">Electrical Maintenance</h2>
+                <h2 class="font-bold text-2xl hover:text-red-600">Electrical Maintenance</h2>
                 <p class="font-light">Regular servicing and maintenance to ensure your electrical systems run smoothly.</p>
                 <a href="#" class="flex justify-center items-center">Learn More <img src="./assets/Frame.png" alt="Right Angle"></a>
             </div>
             <div class="flex flex-col items-center text-center justify-center bg-white p-5 rounded-lg shadow-md border-t-red-700 border-t-4 gap-5 hover:border-t-orange-500 hover:shadow-lg hover:translate-2.5 max-w-90 transition-all duration-300 card ">
                 <img src="./assets/energy.png" alt="Energy Management" width="40">
-                <h2 class="font-bold text-2xl">Energy Management</h2>
+                <h2 class="font-bold text-2xl hover:text-red-600">Energy Management</h2>
+                <p class="font-light">Solutions to optimize and reduce energy consumption and costs.</p>
+                <a href="#" class="flex justify-center items-center">Learn More <img src="./assets/Frame.png" alt="Right Angle"></a>
+            </div>
+            <div class="flex flex-col items-center text-center justify-center bg-white p-5 rounded-lg shadow-md border-t-red-700 border-t-4 gap-5 hover:border-t-orange-500 hover:shadow-lg hover:translate-2.5 max-w-90 transition-all duration-300 card ">
+                <img src="./assets/lighting.png" alt="Lighting & Power" width="40">
+                <h2 class="font-bold text-2xl hover:text-red-600">Lighting & Power</h2>
+                <p class="font-light">Comprehensive lighting design and power distribution solutions.</p>
+                <a href="#" class="flex justify-center items-center text-center">Learn More <img src="./assets/Frame.png" alt="Right Angle"></a>
+            </div>
+            <div class="flex flex-col items-center text-center justify-center bg-white p-5 rounded-lg shadow-md border-t-red-700 border-t-4 gap-5 hover:border-t-orange-500 hover:shadow-lg hover:translate-2.5 max-w-90 transition-all duration-300 card ">
+                <img src="./assets/procurment.png" alt="Procurement" width="40">
+                <h2 class="font-bold text-2xl hover:text-red-600">Procurement</h2>
+                <p class="font-light">Sourcing high-quality electrical equipment and components.</p>
+                <a href="#" class="flex justify-center items-center">Learn More <img src="./assets/Frame.png" alt="Right Angle"></a>
+            </div>
+            <div class="flex flex-col items-center text-center justify-center bg-white p-5 rounded-lg shadow-md border-t-red-700 border-t-4 gap-5 hover:border-t-orange-500 hover:shadow-lg hover:translate-2.5 max-w-90 transition-all duration-300 card ">
+                <img src="./assets/project.png" alt="Project Management" width="40">
+                <h2 class="font-bold text-2xl hover:text-red-600">Project Management</h2>
                 <p class="font-light">End-to-end management of electrical projects of any scale.</p>
                 <a href="#" class="flex justify-center items-center">Learn More <img src="./assets/Frame.png" alt="Right Angle"></a>
             </div>
             <div class="flex flex-col items-center text-center justify-center bg-white p-5 rounded-lg shadow-md border-t-red-700 border-t-4 gap-5 hover:border-t-orange-500 hover:shadow-lg hover:translate-2.5 max-w-90 transition-all duration-300 card ">
-                <img src="./assets/domestic.png" alt="Domestic Installation" width="40">
-                <h2 class="font-bold text-2xl">Domestic Installation</h2>
-                <p class="font-light">Complete electrical solutions for homes and residential properties.</p>
-                <a href="#" class="flex justify-center items-center text-center">Learn More <img src="./assets/Frame.png" alt="Right Angle"></a>
-            </div>
-            <div class="flex flex-col items-center text-center justify-center bg-white p-5 rounded-lg shadow-md border-t-red-700 border-t-4 gap-5 hover:border-t-orange-500 hover:shadow-lg hover:translate-2.5 max-w-90 transition-all duration-300 card ">
-                <img src="./assets/domestic.png" alt="Domestic Installation" width="40">
-                <h2 class="font-bold text-2xl">Domestic Installation</h2>
-                <p class="font-light">Complete electrical solutions for homes and residential properties.</p>
+                <img src="./assets/low-voltage.png" alt="Extra Low Voltage Installations" width="40">
+                <h2 class="font-bold text-2xl hover:text-red-600">Extra Low Voltage Installations</h2>
+                <p class="font-light">Specialized ELV systems for security, communications, and more.</p>
                 <a href="#" class="flex justify-center items-center">Learn More <img src="./assets/Frame.png" alt="Right Angle"></a>
             </div>
             <div class="flex flex-col items-center text-center justify-center bg-white p-5 rounded-lg shadow-md border-t-red-700 border-t-4 gap-5 hover:border-t-orange-500 hover:shadow-lg hover:translate-2.5 max-w-90 transition-all duration-300 card ">
-                <img src="./assets/domestic.png" alt="Domestic Installation" width="40">
-                <h2 class="font-bold text-2xl">Domestic Installation</h2>
-                <p class="font-light">Complete electrical solutions for homes and residential properties.</p>
+                <!-- <img src="./assets/domestic.png" alt="Domestic Installation" width="40"> -->
+                <h2 class="font-bold text-2xl hover:text-red-600">General Contract</h2>
+                <p class="font-light">Full-service electrical contracting for projects of all sizes.</p>
                 <a href="#" class="flex justify-center items-center">Learn More <img src="./assets/Frame.png" alt="Right Angle"></a>
             </div>
-            <div class="flex flex-col items-center text-center justify-center bg-white p-5 rounded-lg shadow-md border-t-red-700 border-t-4 gap-5 hover:border-t-orange-500 hover:shadow-lg hover:translate-2.5 max-w-90 transition-all duration-300 card ">
-                <img src="./assets/domestic.png" alt="Domestic Installation" width="40">
-                <h2 class="font-bold text-2xl">Domestic Installation</h2>
-                <p class="font-light">Complete electrical solutions for homes and residential properties.</p>
-                <a href="#" class="flex justify-center items-center">Learn More <img src="./assets/Frame.png" alt="Right Angle"></a>
+            <div class="bg-slate-900 text-white p-5 rounded-xl hover:bg-slate-700">
+                <h3 class="font-bold text-2xl mb-2">Professional Training Available</h3>
+                <p>We also offer standard electrical training programs for individuals and organizations</p>
             </div>
-            <div class="flex flex-col items-center text-center justify-center bg-white p-5 rounded-lg shadow-md border-t-red-700 border-t-4 gap-5 hover:border-t-orange-500 hover:shadow-lg hover:translate-2.5 max-w-90 transition-all duration-300 card ">
-                <img src="./assets/domestic.png" alt="Domestic Installation" width="40">
-                <h2 class="font-bold text-2xl">Domestic Installation</h2>
-                <p class="font-light">Complete electrical solutions for homes and residential properties.</p>
-                <a href="#" class="flex justify-center items-center">Learn More <img src="./assets/Frame.png" alt="Right Angle"></a>
-            </div>
-            
         </div>
     </section>
-<script src="./index.js"></script>
+<script src="index.js"></script>
 </body>
 </html>
