@@ -175,19 +175,37 @@
         </div>
     </section>
     <section class="flex flex-col md:flex-row justify-center flex-wrap items-center gap-10 px-5 py-10">
-        <div class="flex flex-col justify-center items-center gap-5 max-w-2xl text-center">
+        <div class="flex flex-col justify-start items-start gap-5 max-w-md text-left">
             <h3 class="text-2xl text-slate-950 font-bold">About Udemility Electrical Services</h3>
             <p>Udemility Electrical Services is a leading electrical installation company dedicated to providing high-quality electrical solutions for domestic, commercial, and industrial clients. With years of experience and a team of skilled professionals, we deliver reliable and safe electrical services.</p>
-            <ul class="list-inside text-left" style="list-style-image: url('./assets/checkbox.svg');">
-                <li>Licensed and certified electrical professionals</li>
-                <li>Adherence to safety standards and regulations</li>
-                <li>Quality workmanship and attention to detail</li>
-                <li>Timely project completion and professional service</li>
+            <ul class="list-inside text-left mt-2 flex flex-col gap-2 pl-6" style="list-style-image: url('./assets/checkbox.svg');">
+                <li class="flex items-center gap-2">
+                    <img src="./assets/checkbox.svg" alt="Checkbox" class="w-5 h-5">
+                    Licensed and certified electrical professionals
+                </li>
+                <li class="flex items-center gap-2">
+                    <img src="./assets/checkbox.svg" alt="Checkbox" class="w-5 h-5">
+                    Adherence to safety standards and regulations
+                </li>
+                <li class="flex items-center gap-2">
+                    <img src="./assets/checkbox.svg" alt="Checkbox" class="w-5 h-5">
+                    Quality workmanship and attention to detail
+                </li>
+                <li class="flex items-center gap-2">
+                    <img src="./assets/checkbox.svg" alt="Checkbox" class="w-5 h-5">
+                    Timely project completion and professional service
+                </li>
             </ul>
+            <button type="button" class="bg-red-600 text-white px-5 py-2 rounded hover:bg-red-700 duration-500 flex justify-center items-center  gap-1  cursor-pointer">
+            <a href="tel:+2349079514121">Contact us Today</a></button>
         </div>
-        <div class="flex justify-center items-center">
-            <img src="./assets/flyer.png" alt="flyer image" class="w-full max-w-md ">
+        <div class="relative flex justify-center items-center z-0">
+            <div class="absolute top-3 left-3 w-20 h-20 bg-yellow-400 rounded -translate-x-6 -translate-y-6 -z-10 pointer-events-none"></div>
+            <img src="./assets/flyer.png" alt="flyer image" class="w-full max-w-md relative z-0">
+            <div class="absolute bottom-3 right-3 w-20 h-20 bg-red-600 rounded translate-x-6 translate-y-6 -z-10 pointer-events-none"></div>
+            
         </div>
+        
     </section>
 <script src="index.js"></script>
 </body>
