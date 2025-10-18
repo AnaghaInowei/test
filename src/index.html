@@ -3,48 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwind / compiled stylesheet -->
     <link rel="stylesheet" href="output.css">
-    <!-- <link rel="stylesheet" href="input.css"> -->
+    <!-- Favicon -->
     <link rel="shortcut icon" href="./assets/udeme-logo.png" type="image/x-icon">
+    <!-- Ionicons for icons (ESM & nomodule fallbacks) -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <title>Udemelity Services</title>
-        <!-- <style>
-            /* Button styles for secondary button — avoids needing Tailwind rebuild */
-            .btn-secondary {
-                background: var(--color-white);
-                color: var(--color-slate-900);
-                display: inline-flex;
-                align-items: center;
-                justify-content: center;
-                gap: 0.25rem;
-                transition: background-color 0.3s ease, color 0.3s ease;
-            }
-            .btn-secondary:hover {
-                background: var(--color-slate-900);
-                color: var(--color-white);
-            }
-            .btn-secondary a { color: inherit; text-decoration: none; }
-        </style> -->
 </head>
 <body>
-    <!-- <nav class="flex justify-between items-center p-4 bg-white shadow-md"> -->
+
+    <!-- Navigation / Header -->
     <nav class="fixed w-full p-5 bg-white md:flex md:justify-between md:items-center shadow-md z-10">
-            <div class="flex justify-between items-center">
-                <div class="flex flex-row justify-center items-center gap-2">
-                    <img src="./assets/udeme-logo.png" alt="Udemelity Logo" class="cursor-pointer h-8 md:h-10">
-                    <h3 class="">Udemelity <span class="text-red-500">Electrical Services</span> </h3>
-                
-                </div>
-                
-                <span class="text-3xl cursor-pointer md:hidden mx-2" >
-                    <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
-                </span>
-                
-                
+        <div class="flex justify-between items-center">
+            <!-- Logo and brand -->
+            <div class="flex flex-row justify-center items-center gap-2">
+                <img src="./assets/udeme-logo.png" alt="Udemelity Logo" class="cursor-pointer h-8 md:h-10">
+                <h3 class="">Udemelity <span class="text-red-500">Electrical Services</span> </h3>
             </div>
+
+            <!-- Mobile menu toggle (ion-icon) -->
+            <span class="text-3xl cursor-pointer md:hidden mx-2" >
+                <!-- onclick calls Menu(this) in index.js -->
+                <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+            </span>
+        </div>
+
+        <!-- Navigation links (responsive) -->
         <div class=" md:flex md:items-center">
             <ul class="md:flex md:items-center z-50 md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-3.5 pr-3.5 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+                <!-- Primary nav items -->
                 <li class="mx-4 my-6 md:my-0">
                     <a href="#" class="text-xl hover:text-red-600 duration-500">Home</a>
                 </li>
@@ -60,12 +49,17 @@
                 <li class="mx-4 my-6 md:my-0">
                     <a href="#" class="text-xl hover:text-red-600 duration-500">Contact</a>
                 </li>
-                <button type="button" class="bg-red-600 text-white px-2 py-2 rounded hover:bg-red-700 duration-500 flex justify-center items-center  gap-1 w-full cursor-pointer"><img src="./assets/phone.svg" alt="Phone">
-            <a href="tel:+2349079514121">Call Now</a></button>
+
+                <!-- Call-to-action button -->
+                <button type="button" class="bg-red-600 text-white px-2 py-2 rounded hover:bg-red-700 duration-500 flex justify-center items-center  gap-1 w-full cursor-pointer">
+                    <img src="./assets/phone.svg" alt="Phone">
+                    <a href="tel:+2349079514121">Call Now</a>
+                </button>
             </ul>
         </div>
     </nav>
 
+    <!-- Hero section -->
     <section class="flex flex-col items-start text-left pt-10 pb-10 px-5 bg-slate-950 md:items-start md:text-left" style="
     padding-top: 5rem;
     padding-bottom: 5rem;
@@ -76,6 +70,7 @@
                 <p class="md:w-2/3 text-lg md:text-xl mb-6">Providing top-quality domestic, commercial, and industrial electrical installations with a focus on safety and reliabilty</p>
             </div>
 
+            <!-- Hero CTAs -->
             <div class="mt-4 flex flex-col md:flex-row md:items-center gap-4">
                 <button class="font-bold bg-red-600 text-white px-6 py-2 rounded hover:bg-red-700 duration-500 flex justify-center items-center text-center w-full hover:translate-0.5 md:w-auto cursor-pointer">
                     <a href="#">Get a free Quote</a>
@@ -85,6 +80,8 @@
             </div>
         </div>
     </section>
+
+    <!-- Services overview -->
     <section class="flex flex-col text-center justify-center items-center p-5 bg-gray-100">
         <div class="flex flex-col text-center items-center justify-center bg-inherit" >
             <h2 class="font-bold  text-slate-950 pt-10 text-4xl ">Our Services</h2>
@@ -93,91 +90,110 @@
             max-width: 50rem;
             ">We offer a comprehensive range of professional electrical services for residential, commercial, and industrial clients.</p>
         </div>
+
+        <!-- Services cards grid -->
         <div class="flex  flex-wrap justify-center items-center gap-10 mt-10">
+            <!-- Example card: Domestic Installation -->
             <div class="flex flex-col items-center text-center justify-center bg-white p-5 rounded-lg shadow-md border-t-red-700 border-t-4 gap-5 hover:border-t-orange-500 hover:shadow-lg hover:translate-2.5 max-w-90 transition-all duration-300 card ">
                 <img src="./assets/domestic.png" alt="Domestic Installation" width="40">
                 <h2 class="font-bold text-2xl hover:text-red-600">Domestic Installation</h2>
                 <p class="font-light">Complete electrical solutions for homes and residential properties.</p>
                 <a href="#" class="flex justify-center items-center">Learn More <img src="./assets/Frame.png" alt="Right Angle"></a>
             </div>
+
+            <!-- Additional service cards (keep pattern for others) -->
             <div class="flex flex-col items-center text-center justify-center bg-white p-5 rounded-lg shadow-md border-t-red-700 border-t-4 gap-5  hover:border-t-orange-500 hover:shadow-lg hover:translate-2.5 max-w-90 transition-all duration-300 card">
                 <img src="./assets/commercial.png" alt="Commercial Installation" width="40">
                 <h2 class="font-bold text-2xl hover:text-red-600">Commercial Installation</h2>
                 <p class="font-light">Electrical systems for offices, retail spaces, and commercial buildings.</p>
                 <a href="#" class="flex justify-center items-center">Learn More <img src="./assets/Frame.png" alt="Right Angle"></a>
             </div>
-            
-           
+
             <div class="flex flex-col items-center text-center justify-center bg-white p-5 rounded-lg shadow-md border-t-red-700 border-t-4 gap-5 hover:border-t-orange-500 hover:shadow-lg hover:translate-2.5 max-w-90 transition-all duration-300 card ">
                 <img src="./assets/industrial.png" alt="Industrial Installation" width="40">
                 <h2 class="font-bold text-2xl hover:text-red-600">Industrial Installation</h2>
                 <p class="font-light">Heavy-duty electrical solutions for industrial facilities and factories.</p>
                 <a href="#" class="flex justify-center items-center">Learn More <img src="./assets/Frame.png" alt="Right Angle"></a>
             </div>
+
             <div class="flex flex-col items-center text-center justify-center bg-white p-5 rounded-lg shadow-md border-t-red-700 border-t-4 gap-5 hover:border-t-orange-500 hover:shadow-lg hover:translate-2.5 max-w-90 transition-all duration-300 card ">
                 <img src="./assets/troubleshooting.png" alt="Electrical Troubleshooting" width="40">
                 <h2 class="font-bold text-2xl hover:text-red-600">Electrical Troubleshooting</h2>
                 <p class="font-light">Diagnosing and fixing electrical problems quickly and efficiently.</p>
                 <a href="#" class="flex justify-center items-center">Learn More <img src="./assets/Frame.png" alt="Right Angle"></a>
             </div>
-             <div class="flex flex-col items-center text-center justify-center bg-white p-5 rounded-lg shadow-md border-t-red-700 border-t-4 gap-5 hover:border-t-orange-500 hover:shadow-lg hover:translate-2.5 max-w-90 transition-all duration-300 card ">
+
+            <div class="flex flex-col items-center text-center justify-center bg-white p-5 rounded-lg shadow-md border-t-red-700 border-t-4 gap-5 hover:border-t-orange-500 hover:shadow-lg hover:translate-2.5 max-w-90 transition-all duration-300 card ">
                 <img src="./assets/earthing.png" alt="Earthing & Lightning Protection" width="40">
                 <h2 class="font-bold text-2xl hover:text-red-600">Earthing & Lightning Protection</h2>
                 <p class="font-light">Safety systems to protect against electrical surges and lightning strikes.</p>
                 <a href="#" class="flex justify-center items-center">Learn More <img src="./assets/Frame.png" alt="Right Angle"></a>
             </div>
+
             <div class="flex flex-col items-center text-center justify-center bg-white p-5 rounded-lg shadow-md border-t-red-700 border-t-4 gap-5 hover:border-t-orange-500 hover:shadow-lg hover:translate-2.5 max-w-90 transition-all duration-300 card ">
-                <!-- <img src="./assets/domestic.png" alt="Domestic Installation" width="40"> -->
+                <!-- Maintenance service (no icon) -->
                 <h2 class="font-bold text-2xl hover:text-red-600">Electrical Maintenance</h2>
                 <p class="font-light">Regular servicing and maintenance to ensure your electrical systems run smoothly.</p>
                 <a href="#" class="flex justify-center items-center">Learn More <img src="./assets/Frame.png" alt="Right Angle"></a>
             </div>
+
             <div class="flex flex-col items-center text-center justify-center bg-white p-5 rounded-lg shadow-md border-t-red-700 border-t-4 gap-5 hover:border-t-orange-500 hover:shadow-lg hover:translate-2.5 max-w-90 transition-all duration-300 card ">
                 <img src="./assets/energy.png" alt="Energy Management" width="40">
                 <h2 class="font-bold text-2xl hover:text-red-600">Energy Management</h2>
                 <p class="font-light">Solutions to optimize and reduce energy consumption and costs.</p>
                 <a href="#" class="flex justify-center items-center">Learn More <img src="./assets/Frame.png" alt="Right Angle"></a>
             </div>
+
             <div class="flex flex-col items-center text-center justify-center bg-white p-5 rounded-lg shadow-md border-t-red-700 border-t-4 gap-5 hover:border-t-orange-500 hover:shadow-lg hover:translate-2.5 max-w-90 transition-all duration-300 card ">
                 <img src="./assets/lighting.png" alt="Lighting & Power" width="40">
                 <h2 class="font-bold text-2xl hover:text-red-600">Lighting & Power</h2>
                 <p class="font-light">Comprehensive lighting design and power distribution solutions.</p>
                 <a href="#" class="flex justify-center items-center text-center">Learn More <img src="./assets/Frame.png" alt="Right Angle"></a>
             </div>
+
             <div class="flex flex-col items-center text-center justify-center bg-white p-5 rounded-lg shadow-md border-t-red-700 border-t-4 gap-5 hover:border-t-orange-500 hover:shadow-lg hover:translate-2.5 max-w-90 transition-all duration-300 card ">
                 <img src="./assets/procurment.png" alt="Procurement" width="40">
                 <h2 class="font-bold text-2xl hover:text-red-600">Procurement</h2>
                 <p class="font-light">Sourcing high-quality electrical equipment and components.</p>
                 <a href="#" class="flex justify-center items-center">Learn More <img src="./assets/Frame.png" alt="Right Angle"></a>
             </div>
+
             <div class="flex flex-col items-center text-center justify-center bg-white p-5 rounded-lg shadow-md border-t-red-700 border-t-4 gap-5 hover:border-t-orange-500 hover:shadow-lg hover:translate-2.5 max-w-90 transition-all duration-300 card ">
                 <img src="./assets/project.png" alt="Project Management" width="40">
                 <h2 class="font-bold text-2xl hover:text-red-600">Project Management</h2>
                 <p class="font-light">End-to-end management of electrical projects of any scale.</p>
                 <a href="#" class="flex justify-center items-center">Learn More <img src="./assets/Frame.png" alt="Right Angle"></a>
             </div>
+
             <div class="flex flex-col items-center text-center justify-center bg-white p-5 rounded-lg shadow-md border-t-red-700 border-t-4 gap-5 hover:border-t-orange-500 hover:shadow-lg hover:translate-2.5 max-w-90 transition-all duration-300 card ">
                 <img src="./assets/low-voltage.png" alt="Extra Low Voltage Installations" width="40">
                 <h2 class="font-bold text-2xl hover:text-red-600">Extra Low Voltage Installations</h2>
                 <p class="font-light">Specialized ELV systems for security, communications, and more.</p>
                 <a href="#" class="flex justify-center items-center">Learn More <img src="./assets/Frame.png" alt="Right Angle"></a>
             </div>
+
             <div class="flex flex-col items-center text-center justify-center bg-white p-5 rounded-lg shadow-md border-t-red-700 border-t-4 gap-5 hover:border-t-orange-500 hover:shadow-lg hover:translate-2.5 max-w-90 transition-all duration-300 card ">
-                <!-- <img src="./assets/domestic.png" alt="Domestic Installation" width="40"> -->
+                <!-- General Contract service (no icon) -->
                 <h2 class="font-bold text-2xl hover:text-red-600">General Contract</h2>
                 <p class="font-light">Full-service electrical contracting for projects of all sizes.</p>
                 <a href="#" class="flex justify-center items-center">Learn More <img src="./assets/Frame.png" alt="Right Angle"></a>
             </div>
+
+            <!-- Training promo card -->
             <div class="bg-slate-950 text-white p-5 rounded-xl hover:bg-slate-700">
                 <h3 class="font-bold text-2xl mb-2">Professional Training Available</h3>
                 <p>We also offer standard electrical training programs for individuals and organizations</p>
             </div>
         </div>
     </section>
+
+    <!-- About / feature section -->
     <section class="flex flex-col md:flex-row justify-center flex-wrap items-center gap-10 px-5 py-10">
         <div class="flex flex-col justify-start items-start gap-5 max-w-md text-left">
             <h3 class="text-2xl text-slate-950 font-bold">About Udemility Electrical Services</h3>
             <p>Udemility Electrical Services is a leading electrical installation company dedicated to providing high-quality electrical solutions for domestic, commercial, and industrial clients. With years of experience and a team of skilled professionals, we deliver reliable and safe electrical services.</p>
+
+            <!-- Key features list -->
             <ul class="list-inside text-left mt-2 flex flex-col gap-2 pl-6" style="list-style-image: url('./assets/checkbox.svg');">
                 <li class="flex items-center gap-2">
                     <img src="./assets/checkbox.svg" alt="Checkbox" class="w-5 h-5">
@@ -196,21 +212,31 @@
                     Timely project completion and professional service
                 </li>
             </ul>
+
             <button type="button" class="bg-red-600 text-white px-5 py-2 rounded hover:bg-red-700 duration-500 flex justify-center items-center  gap-1  cursor-pointer">
-            <a href="tel:+2349079514121">Contact us Today</a></button>
+                <a href="tel:+2349079514121">Contact us Today</a>
+            </button>
         </div>
+
+        <!-- Visual / flyer -->
         <div class="relative flex justify-center items-center z-0">
+            <!-- Decorative background shapes -->
             <div class="absolute top-3 left-3 w-20 h-20 bg-yellow-400 rounded -translate-x-6 -translate-y-6 -z-10 pointer-events-none"></div>
             <img src="./assets/flyer.png" alt="flyer image" class="w-full max-w-md relative z-0">
             <div class="absolute bottom-3 right-3 w-20 h-20 bg-red-600 rounded translate-x-6 translate-y-6 -z-10 pointer-events-none"></div>
         </div>
     </section>
+
+    <!-- Projects showcase -->
     <section class="flex flex-col justify-center items-center bg-slate-950 ">
         <div class="flex flex-col justify-center items-center gap-5 text-center py-10 px-5 ">
             <h3 class="font-bold text-white text-2xl">Our Projects</h3>
             <p class="text-white ">Take a look at some of our recent electrical installation projects across various sectors.</p>
         </div>
+
+        <!-- Project cards grid -->
         <div class="flex flex-wrap justify-center items-center gap-10 px-5 pb-10">
+            <!-- Repeatable project card -->
             <div class="flex flex-col justify-center items-center text-white bg-slate-800 rounded-lg shadow-md border-b-red-700 border-b-5 gap-5 hover:border-b-orange-500 hover:shadow-lg hover:translate-2.5 hover:shadow-yellow-600  transition-all duration-300  mb-5" style="max-width: 20rem;">
                 <img src="./assets/commercial-office-building.png" alt="commercial-office-building" class="w-full h-auto object-cover rounded-t-2xl">
                 <div class="px-5 pb-5 text-left">
@@ -219,6 +245,8 @@
                     <p class="font-light">Complete electrical system installation for a modern office complex, including lighting, power distribution, and networking infrastructure.</p>
                 </div>
             </div>
+
+            <!-- Additional project cards (duplicate content) -->
             <div class="flex flex-col justify-center items-center text-white bg-slate-800 rounded-lg shadow-md border-b-red-700 border-b-5 gap-5 hover:border-b-orange-500 hover:shadow-lg hover:translate-2.5 hover:shadow-yellow-600  transition-all duration-300  mb-5" style="max-width: 20rem;">
                 <img src="./assets/commercial-office-building.png" alt="commercial-office-building" class="w-full h-auto object-cover rounded-t-2xl">
                 <div class="px-5 pb-5 text-left">
@@ -227,6 +255,7 @@
                     <p class="font-light">Complete electrical system installation for a modern office complex, including lighting, power distribution, and networking infrastructure.</p>
                 </div>
             </div>
+
             <div class="flex flex-col justify-center items-center text-white bg-slate-800 rounded-lg shadow-md border-b-red-700 border-b-5 gap-5 hover:border-b-orange-500 hover:shadow-lg hover:translate-2.5 hover:shadow-yellow-600  transition-all duration-300  mb-5" style="max-width: 20rem;">
                 <img src="./assets/commercial-office-building.png" alt="commercial-office-building" class="w-full h-auto object-cover rounded-t-2xl">
                 <div class="px-5 pb-5 text-left">
@@ -235,6 +264,7 @@
                     <p class="font-light">Complete electrical system installation for a modern office complex, including lighting, power distribution, and networking infrastructure.</p>
                 </div>
             </div>
+
             <div class="flex flex-col justify-center items-center text-white bg-slate-800 rounded-lg shadow-md border-b-red-700 border-b-5 gap-5 hover:border-b-orange-500 hover:shadow-lg hover:translate-2.5 hover:shadow-yellow-600  transition-all duration-300  mb-5" style="max-width: 20rem;">
                 <img src="./assets/commercial-office-building.png" alt="commercial-office-building" class="w-full h-auto object-cover rounded-t-2xl">
                 <div class="px-5 pb-5 text-left">
@@ -243,14 +273,7 @@
                     <p class="font-light">Complete electrical system installation for a modern office complex, including lighting, power distribution, and networking infrastructure.</p>
                 </div>
             </div>
-            <div class="flex flex-col justify-center items-center text-white bg-slate-800 rounded-lg shadow-md border-b-red-700 border-b-5 gap-5 hover:border-b-orange-500 hover:shadow-lg hover:translate-2.5 hover:shadow-yellow-600  transition-all duration-300  mb-5" style="max-width: 20rem;">
-                <img src="./assets/commercial-office-building.png" alt="commercial-office-building" class="w-full h-auto object-cover rounded-t-2xl">
-                <div class="px-5 pb-5 text-left">
-                    <p class="text-amber-400 pb-5">Commercial Installation</p>
-                    <h3 class="text-2xl font-bold pb-7">Commercial Office Building</h3>
-                    <p class="font-light">Complete electrical system installation for a modern office complex, including lighting, power distribution, and networking infrastructure.</p>
-                </div>
-            </div>
+
             <div class="flex flex-col justify-center items-center text-white bg-slate-800 rounded-lg shadow-md border-b-red-700 border-b-5 gap-5 hover:border-b-orange-500 hover:shadow-lg hover:translate-2.5 hover:shadow-yellow-600  transition-all duration-300  mb-5" style="max-width: 20rem;">
                 <img src="./assets/commercial-office-building.png" alt="commercial-office-building" class="w-full h-auto object-cover rounded-t-2xl">
                 <div class="px-5 pb-5 text-left">
@@ -260,10 +283,49 @@
                 </div>
             </div>
         </div>
+
+        <!-- CTA for discussing projects -->
         <div class="bg-white text-slate-950 text-2xl p-5 hover:translate-1.5  border-white rounded-xl mb-10 hover:bg-slate-200 hover:scale-1.05 transition-all duration-300">
-                <a href="#">Discuss your Project with us</a>
-            </div>
+            <a href="#">Discuss your Project with us</a>
+        </div>
     </section>
+
+    <!-- Contact section -->
+    <section class=" p-5">
+        <div class=" flex flex-col justify-center items-center text-center gap-3 mb-5">
+            <h2 class="font-bold text-4xl text-slate-950 mb-4">
+                Contact Us
+            </h2>
+            <p class="max-w-2xl">Get in touch with us for all your electrical service needs. We're here to help with any questions or to provide a free quote.
+            </p>
+        </div>
+
+        <!-- Contact details card -->
+        <div class="flex flex-col justify-center items-start gap-3 bg-slate-950 text-left text-white rounded-md p-6 w-1/2 ">
+            <h3>Contact Information</h3>
+            <div class="   ">
+                <div class="flex items-center gap-4 mb-4">
+                    <img src="./assets/location.png" alt="location" class="w-6 h-6 flex-shrink-0">
+                    <p class="m-0">No.4 Onunwo Street Rumourlumeni Port Harcourt Rivers State</p>
+                </div>
+                <div class="flex items-center gap-4 mb-4">
+                    <img src="./assets/call.png" alt="call" class="w-6 h-6 flex-shrink-0">
+                    <div>
+                        <!-- Phone numbers (clickable) -->
+                        <p class="m-0"><a href="tel:+2349079514121" class="text-white">+234 907 951 4121</a></p>
+                        <p class="m-0"><a href="tel:+2349079514121" class="text-white">+234 907 951 4121</a></p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-4">
+                    <img src="./assets/mailing.png" alt="email" class="w-6 h-6 flex-shrink-0">
+                    <p class="m-0">Email: <a href="mailto:Udemilityelectrical@gmail.com" class="text-white">Udemilityelectrical@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main JS -->
+    <!-- index.js presumably contains the Menu toggle and any interactive logic -->
     <script src="index.js"></script>
 </body>
 </html>
