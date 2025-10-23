@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Tailwind / compiled stylesheet -->
-    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="./src/output.css">
     <!-- Favicon -->
     <link rel="shortcut icon" href="./src/assets/udeme-logo.png" type="image/x-icon">
     <!-- Ionicons for icons (ESM & nomodule fallbacks) -->
@@ -290,7 +290,7 @@
         </div>
     </section>
 
-    <!-- Contact section -->
+   <!-- Contact section -->
     <section class=" p-5">
         <div class=" flex flex-col justify-center items-center text-center gap-3 mb-5">
             <h2 class="font-bold text-4xl text-slate-950 mb-4">
@@ -299,9 +299,45 @@
             <p class="max-w-2xl">Get in touch with us for all your electrical service needs. We're here to help with any questions or to provide a free quote.
             </p>
         </div>
-
-        <!-- Contact details card -->
-        <div class="flex flex-col justify-center items-start gap-3 bg-slate-950 text-left text-white rounded-md p-6 w-1/2 ">
+        <div class="flex flex-col md:flex-row justify-center items-center gap-10">
+            <div class="w-full md:w-1/2 lg:w-1/2  mb-5">
+                <!-- Contact form -->
+                 <form action="#" method="POST" class="flex flex-col gap-4 w-full bg-white p-6 rounded-md shadow-md">
+                    <h3 class="font-bold text-2xl">Contact Form</h3>
+                    <div class="flex flex-col md:flex-row gap-4">
+                        <label for="name">Your Name</label>
+                      <input type="text" name="name" placeholder="John Doe" required="" class="p-2   rounded-md focus:outline-none focus:ring-2 focus:ring-red-600">
+                    <label for="email">Your Email</label>
+                      <input type="email" name="email" placeholder="johndoe@gmail.com" required="" class="p-2  rounded-md focus:outline-none focus:ring-2 focus:ring-red-600">
+                    </div>
+                    <label for="phone">Phone Number</label>
+                      <input type="tel" name="phone" placeholder="Your Phone Number" required="" class="p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600">
+                    
+                    <label for="service">Service Needed</label>
+                    <select name="service" id="service">
+                        <option value="0"></option>
+                        <option value="1">Domestic Installation</option>
+                        <option value="2">Industrial Installation</option>
+                        <option value="3">Electrical Troubleshooting</option>
+                        <option value="4">Earthing &amp; Lightning Protection</option>
+                        <option value="5">Electrical Maintenance</option>
+                        <option value="6">Energy Management</option>
+                        <option value="7">Lighting &amp; Power</option>
+                        <option value="8">Procurement</option>
+                        <option value="9">Project Management</option>
+                        <option value="10">Extra Low Voltage Installations</option>
+                        <option value="11">General Contract</option>
+                        <option value="12">Commercial Installation</option>
+                    </select>
+                    <textarea name="message" rows="4" placeholder="Please describe what you need" required="" class="p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600"></textarea>
+                    <button type="submit" class="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 duration-500 flex justify-center items-center  gap-1 w-full cursor-pointer">
+                    Send Message
+                  </button>
+               </form> 
+            </div>
+        <div class="flex flex-col justify-center items-start gap-5 md:w-1/2">
+             <!-- Contact details card -->
+        <div class="flex flex-col justify-center items-start gap-3 bg-slate-950 text-left text-white rounded-md p-2 md:p-6 w-full mb-5">
             <h3>Contact Information</h3>
             <div class="   ">
                 <div class="flex items-center gap-4 mb-4">
@@ -312,8 +348,8 @@
                     <img src="./src/assets/call.png" alt="call" class="w-6 h-6 flex-shrink-0">
                     <div>
                         <!-- Phone numbers (clickable) -->
-                        <p class="m-0"><a href="tel:+2349079514121" class="text-white">+234 907 951 4121</a></p>
-                        <p class="m-0"><a href="tel:+2349079514121" class="text-white">+234 907 951 4121</a></p>
+                        <p class="m-0"><a href="tel:+2348162782796" class="text-white">08162782796</a></p>
+                        <p class="m-0"><a href="tel:+2348028472912" class="text-white">08028472912</a></p>
                     </div>
                 </div>
                 <div class="flex items-center gap-4">
@@ -322,8 +358,65 @@
                 </div>
             </div>
         </div>
-    </section>
+        <div class="w-full  p-4 rounded shadow-md ">
+            <h3 class="font-bold text-2xl">Connect with Us</h3>
+            <div class="flex gap-4 mt-4">
+                <!-- Social media icons (placeholders) -->
+                <a href="http://127.0.0.1:5500/src/index.html#"><img src="./src/assets/facebook.png" alt="Facebook" class="w-10 h-10"></a>
+                <a href="tel:907079514121"><img src="./src/assets/message.png" alt="message" class="w-10 h-10"></a>
+            </div>
+            <div class="mt-4">
+                <h3 class="font-bold text-xl">Business Hours</h3>
+                <ul class="font-light">
+                    <li>Monday - Friday: 8:00 AM - 6:00 PM</li>
+                    <li>Saturday: 9:00 AM - 4:00 PM</li>
+                    <li>Sunday: Closed</li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </div></section>
 
+
+    <footer class="bg-slate-950 text-center text-gray-200 p-4">
+        <div class=" flex flex-col md:flex-row md:justify-between md:items-start  p-4">
+            <div class="flex flex-col  items-start gap-3 mb-4 md:w-1/2">
+                <div class="flex items-start gap-5 text-left mb-2">
+                    <img src="./src/assets/udeme-logo.png" alt="Udemelity Logo" class="h-10">
+                    <p class="text-sm">Udemility <span class="block">Electrical Services</span></p>
+                </div>
+                <p class="text-left font-extralight">Professional electrical services for domestic, commercial, and industrial clients. We're committed to safety, quality, and customer satisfaction.</p>
+           </div>
+            <!-- <div class="flex flex-col md:flex-row md:justify-center md:items-start gap-10 text-left "> -->
+                <div class="flex flex-col justify-center items-start gap-5  text-left">
+                    <h3 class="font-bold">Quick Links</h3>
+                    <ul class="flex flex-col gap-2 font-extralight mt-2 text-left">
+                        <li><a href="#" class="hover:text-red-600 duration-500">Home</a></li>
+                        <li><a href="#" class="hover:text-red-600 duration-500">Services</a></li>
+                        <li><a href="#" class="hover:text-red-600 duration-500">About</a></li>
+                        <li><a href="#" class="hover:text-red-600 duration-500">Projects</a></li>
+                       <li><a href="#" class="hover:text-red-600 duration-500">Contact</a></li>
+                   </ul>
+                </div>
+                <div class="flex flex-col justify-center items-start gap-5 text-left ">
+                    <h3 class="font-bold">Our Services</h3>
+                    <ul class="flex flex-col gap-2 font-extralight mt-2">
+                        <li><a href="#" class="hover:text-red-600 duration-500">Domestic Installation</a></li>
+                        <li><a href="#" class="hover:text-red-600 duration-500">Commercial Installation</a></li>
+                        <li><a href="#" class="hover:text-red-600 duration-500">Industrial Installation</a></li>
+                        <li><a href="#" class="hover:text-red-600 duration-500">Electrical Troubleshooting</a></li>
+                        <li><a href="#" class="hover:text-red-600 duration-500">Earthing &amp; Lightning Protection</a></li>
+                        <li><a href="#" class="hover:text-red-600 duration-500">Electrical Maintenance</a></li>
+                        <li><a href="#" class="hover:text-red-600 duration-500">Energy Management</a></li>
+                        <li><a href="#" class="hover:text-red-600 duration-500">Lighting &amp; Power</a></li>
+                   </ul>
+               </div>
+           <!-- </div> -->
+        </div>
+        
+        
+        <p class="font-extralight p-10">© 2025 Udemelity Electrical Services. All rights reserved.</p>
+    </footer>
     <!-- Main JS -->
     <!-- index.js presumably contains the Menu toggle and any interactive logic -->
     <script src="index.js"></script>
