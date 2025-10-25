@@ -53,6 +53,10 @@
     --default-mono-font-family: var(--font-mono);
   }
 }
+html {
+  scroll-behavior: smooth;
+}
+
 @layer base {
   *, ::after, ::before, ::backdrop, ::file-selector-button {
     box-sizing: border-box;
