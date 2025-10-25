@@ -303,7 +303,7 @@
         <div class="flex flex-col md:flex-row justify-center items-center gap-10">
             <div class="w-full md:w-1/2 lg:w-1/2  mb-5">
                 <!-- Contact form -->
-                 <form action="#" method="POST" class="flex flex-col gap-4 w-full bg-white p-6 rounded-md shadow-md">
+                 <form id="contact-form"   class="flex flex-col gap-4 w-full bg-white p-6 rounded-md shadow-md">
                     <h3 class="font-bold text-2xl">Contact Form</h3>
                     <div class="flex flex-col md:flex-row gap-4">
                         <label for="name">Your Name</label>
@@ -334,6 +334,7 @@
                     <button type="submit" class="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 duration-500 flex justify-center items-center  gap-1 w-full cursor-pointer">
                     Send Message
                   </button>
+                  <p id="form-status" class="text-green-600 font-semibold hidden">Message sent successfully!</p>
                </form> 
             </div>
         <div class="flex flex-col justify-center items-start gap-5 md:w-1/2">
