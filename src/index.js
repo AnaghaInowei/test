@@ -46,7 +46,7 @@ document.querySelectorAll('nav ul li a').forEach(link => {
 document.addEventListener('DOMContentLoaded', () => {
   const form = document.getElementById('contact-form');
   const submitBtn = form.querySelector('button[type="submit"]');
-  const formspreeURL = 'https://formspree.io/f/xnnoaepd'; // replace with your Formspree URL
+  const formspreeURL = 'https://formspree.io/f/xgvpokpa'; // replace with your Formspree URL
 
   form.addEventListener('submit', async (e) => {
     e.preventDefault(); // stop page refresh
